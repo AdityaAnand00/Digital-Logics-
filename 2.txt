@@ -1,1 +1,32 @@
 DIGITAL LOGIC : VIDEO 2 
+
+1. Conversion of DECIMEL to any BASE(let base be x)
+    Decimal number ex : (263.625)10 -> (100000111.101)2
+    @ Keep on dividing the whole part of the number(i.e., 263) by x until the divident becomes 0 and note down the remainder lastly arrange remainder from bottom to top to get the  base x conversion for the whole part . 
+
+    @ Keep on multiplying the decimel part of the number(i.e.,0.625) by x until the decimel part of the product becomes zero or same pattern is repeated(and for this we have to apply bar)  and while doing this for every product store the whole part of it . Finally to get the binary form the decimel part arrange the whole part from top to  bottom . 
+
+    REMEMBER : Binary digits are always arraged in decreasing order 
+
+    Ex : SOME RECURRING CASES :       _
+        1. (36.5)10 -> ()3 [op : 1100.1]
+                                    ____                
+        2. (2.6)10 -> ()2 [op : 10.1001]
+
+    Ex : Cases where we need to give space between digits(sometimes two digit number acts as a single digit after conversion)
+        1.(189.75)10 -> ()32 [op: "5  29.24"]
+            explanation : 
+                189÷32 = 5 remainder 29
+                5÷32 = 0   remainder 5
+[since here remainder is 29(twenty-nine NOT 2 and 9) and 5 so we give a space between them to  demonstrate it ]
+
+
+GATE1 :How many steps / number of divisions / bits are needed to convert (x)10 t0 ()2 ? Give a Proof . 
+OR 
+What is the minimum number of bits needed to represent decimel number x 
+[op : {floor(logx base 2) + 1}  OR { ceil( log(x+1) base2) } ]
+ 
+
+GATE2 : Generalize GATE1 : How many steps/bits are needed to comvert a DECIMEL to any Other base(say Y) ? 
+[op : {floor(logx base Y) + 1}  OR { ceil( log(x+1) base Y) } ]
+
