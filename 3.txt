@@ -1,0 +1,36 @@
+DIGITAL LOGIC : VIDEO 3 [Conversions in number system (base x to base 10)]
+
+RUlE : 
+        @ Just apply weights on every digit and multiply the digit and its corresponding weight and all these number . Remember weights are applied in decreasig order.
+
+        @for any base , just weights will differ , if base is 3 weight will be 3^x.  
+        
+
+        Ex:Converting ()2 to ()10 
+        (11001.101)2 to ()10 => [op : 25.625]
+        [11001.101 = 1*2^4 + 1*2^3 + 0*2^2 + 0*2^1 + 1*2^0].[1*2^−1 + 0*2^−2 + 1*2^−3]
+
+        Ex: (1020)3 to ()10
+
+        Q. (3 6)x = (30)10 , find x ? 
+        Q  (x 1)y = (36)10 , find x and y ?  [op x=1 y=35 || x=5 y=7]
+
+NOTE  : (x)y (where x is the digit and y is the base).Here x should be strictly less than y i.e., [x < y]
+x`x
+
+
+TRICK1 : Remeber 8 4 2 1
+TRICK2 : 
+        -> adding 0 in the last of any binary digit makes the digit multiplied by 2(i.e., base) 
+        -> adding 0 to the right i.e., at last, makes the whole digits shift to left(i.e., leftshift by 1 digit)
+    ex : 101 -> 5 1010 -> 10  10100 -> 20 101000 ->40 
+
+TRICK3 : adding 1 in the last of any binary digit makes the digit multiplied by 2 and then add 1 to it . 
+    ex : 101 -> 5 1011 -> 11  10111 -> 23 101111 ->47 
+
+NOTE : trick 1 , 2 ,3 will  work for any base . 
+
+GENERAL FORM (for converting any base to decimel): 
+()x  -> 0  then  multiply by x 
+     -> 1  then  multiply by x then add 1 
+     -> (x-1) then multiply by x then add (x-1)
