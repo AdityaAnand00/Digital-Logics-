@@ -1,4 +1,4 @@
-DIGITAL LOGIC : VIDEO 2 
+DIGITAL LOGIC : VIDEO 2 [Conversion of DECIMEL to any other BASE]
 
 1. Conversion of DECIMEL to any BASE(let base be x)
     Decimal number ex : (263.625)10 -> (100000111.101)2
